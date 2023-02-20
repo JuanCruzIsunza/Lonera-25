@@ -419,7 +419,6 @@ footer{
         grid-template-rows: 1fr;
         grid-template-areas:
         "mensaje1"
-        "mensaje1"
         "fotoqs";
     }
     #logomarcas{
