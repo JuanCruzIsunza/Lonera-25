@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: rgb(28,98,109);
+    background: linear-gradient(90deg, rgba(28,98,109,1) 75%, rgba(110,242,250,1) 100%);
+} 
+h2 img{
+    width: 450px;
+    grid-area: foto;
+}
+
+
+.marcas img{
+    width: 250px;
+    
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    ;
+    font-family: Ubuntu;
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+}
+
+.main__texto{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    grid-area: texto;
+    
+}
+ul li{
+    display: inline;
+   
+}
+
+.header__menu{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+
+} 
+.footer__marcas {
+    display: flex;
+    justify-content:center;
+}
+main{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: row center;
+    grid-area: main;
+ 
+
+    
+}
+main #mensaje{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    font-size: 40px;
+    grid-area: mensaje1;
+}
+#foto1{
+    width: 450px;
+    grid-area:fotoqs;
+}
+.flex-container2{
+    display: flex;
+    width:100%;
+    padding:30px;
+    flex-flow: row wrap;
+    justify-content: center;
+    color:black;
+    row-gap: 5px;
+    column-gap: 10px;}
+.flex-container1{
+    display: flex;
+    width:100%;
+    padding:30px;
+    flex-flow: row wrap;
+    justify-content: center;
+    color:black;
+    row-gap: 5px;
+    column-gap: 10px;
+
+}
+.tarjeta-producto{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    background-color: #93B1A7;
+    animation-name: animaciontarjetaproducto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease ;
+    animation-direction:alternate ;
+}
+.tarjeta-producto:hover{
+    transform: translate(20px,25px);
+     transition:0.5s ease-out;
+}
+.sucursal25demayo:hover{
+    transform: translate(20px,-25px);
+    transition:0.5s ease-out;
+}
+.sucursalsaladillo:hover{
+    transform: translate(20px,-25px);
+    transition:0.5s ease-out;
+}
+button:hover{
+    transform: translateY(10px);
+    transition:0.5s ease-out;
+}
+.tarjeta-producto img{
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in;
+}
+.tarjeta-producto h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 20px;
+}
+.tarjeta-producto .precio{
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tarjeta-producto button{
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    transition: all 0.5s ease-in;
+    
+}
+
+.sucursalsaladillo{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 30px 15px;
+    background-color: #93B1A7;
+    transition: all 0.5s ease-in;
+    animation-name: animaciontarjetaproducto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease ;
+    animation-direction:alternate ;
+}
+
+.sucursalsaladillo img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sucursalsaladillo h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 40px;
+}
+
+.sucursalsaladillo button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in
+}
+
+.sucursal25demayo{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 30px 15px;
+    background-color: #93B1A7;
+    transition: all 0.5s ease-in;
+    animation-name: animaciontarjetaproducto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease ;
+    animation-direction:alternate ;
+}
+
+.sucursal25demayo img{
+    width: 100%;
+    border-radius: 8px;
+}
+.sucursal25demayo h1{ 
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 40px;
+}
+
+.sucursal25demayo button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in
+}
+form label{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+form{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 25px;
+    width: 300px;
+    background-color: #93B1A7;
+    animation-name: animaciontarjetaproducto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease ;
+    animation-direction:alternate ;
+}
+
+form p{
+    color:white;
+   font-size: 25px ;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ #presupuestoB{
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    transition: all 0.5s ease-in
+ }
+ #mensaje1{
+    color:white;
+   font-size: 40px; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #presupuesto{
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+}
+.fotos img{
+    width: 450px;
+}
+.fotos{
+    display: flex;
+    width:100%;
+    padding:30px;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 10px;
+
+}
+body{
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    " header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+   ;
+    
+}
+header{
+grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+
+#fotom1{
+    grid-area: fotom1;  
+}
+#fotom2{
+    grid-area: fotom2;
+}
+#fotom3{
+    grid-area: fotom3;
+}
+#fotom4{
+ grid-area: fotom4;
+}
+#tp1{
+    grid-area: tp1;
+}
+#tp2{
+    grid-area: tp2;
+}
+#tp3{
+    grid-area: tp3;
+}
+#tp4{
+    grid-area: tp4;
+}
+#tp5{
+    grid-area: tp5;
+}
+#tp6{
+    grid-area: tp6;
+}
+#tp7{
+    grid-area: tp7;
+}
+#tp8{
+    grid-area: tp8;
+}
+#fottr1{
+    grid-area: fottr1;
+}
+#fottr2{
+    grid-area: fottr2;
+}
+#fottr3{
+    grid-area: fottr3;
+}
+#fottr4{
+    grid-area: fottr4;
+}
+#fottr5{
+    grid-area: fottr5;
+}
+#fottr6{
+    grid-area: fottr6;
+}
+#fottr7{
+    grid-area: fottr7;
+}
+#fottr8{
+    grid-area: fottr8;
+}
+#fottr9{
+    grid-area: fottr9;
+}
+@keyframes animaciontarjetaproducto{
+    0%{
+        background-color:#AAAE7F ;
+
+    }
+    33%{
+        background-color: #93B1A7;
+
+    }
+    66%{
+        transform:translateX(20px) ;
+
+    }
+    100%{
+         transform: scale(1.5px);
+    }
+
+}
+
+
+@media (max-width:992px){
+    body{
+        width:auto;
+       
+    grid-template-columns:  1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+   ;
+    }
+    main{
+        width:auto;}
+    head{
+        width: auto;
+    }
+    footer{ 
+        width: auto;
+    }
+    #mainindex{ 
+        display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 70px;
+       grid-template-areas:
+       "texto"
+       "texto"
+       "foto"
+       ;
+       
+    }
+    h2 img{
+        width: 350px;
+    
+    }
+    .main__texto{
+        font-size: 30px;
+      }
+     #mensaje{
+        font-size: 30px;
+     }
+    #mainqs{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "mensaje1"
+        "mensaje1"
+        "fotoqs";
+    }
+    #logomarcas{
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: 50px;
+        grid-template-areas:
+        "fotom1"
+        "fotom2"
+        "fotom3"
+        "fotom4";
+    }
+    .flex-container1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: 70px;;
+        grid-template-areas:
+        "tp1"
+        "tp1"
+        "tp2"
+        "tp3"
+        "tp4"
+        "tp5"
+        "tp6"
+        "tp7"
+        "tp8";
+    }
+    .fotos{
+      
+      
+        padding: 50px;
+        flex-flow:column;
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: 70px;;
+        grid-template-areas:
+        "fottr1"
+        "fottr1"
+        "fottr2"
+        "fottr3"
+        "fottr4"
+        "fottr5"
+        "fottr6"
+        "fottr7"
+        "fottr8"
+        "fottr9";
+    }
+}
+
+
+
+  
+ 
