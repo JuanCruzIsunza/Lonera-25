@@ -11,6 +11,7 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>LONERA 25-QUIENES SOMOS</title>
 </head>
@@ -21,13 +22,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       <nav class="header__menu">
         <a  class="logo animate__animated animate__fadeInLeftBig" href="../index.html"><img src="../assets/img/logo ultimate.jpg" class="header__logo"></a> 
      
-        <ul class="menu animate__animated animate__backInRight ">
-            <li><a href="../paginas/quienessomos.html">Quienes Somos</a> </li>
-            <li><a href="../paginas/sucursales.html">Sucursales</a></li>
-            <li><a href="../paginas/nuestrosproductos.html">Productos</a></li>
-            <li><a href="../paginas/presupuestos.html">Presupuestos</a></li>
-            <li><a href="../paginas/nuestrostrabajos.html">Nuestros Trabajos</a></li>
-         </ul>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle menu animate__animated animate__backInRight "" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button"> <a href="./paginas/quienessomos.html">Quienes Somos</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="./paginas/sucursales.html">Sucursales</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="./paginas/presupuestos.html">Presupuestos </a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="./paginas/nuestrostrabajos.html">Nuestros Trabajos</a> </a></button></li>
+    
+              <li><button class="dropdown-item" type="button"><a href="./paginas/nuestrosproductos.html">Productos</a></button></li>
+            </ul>
+          </div>
       </nav>
       
      </header>
@@ -47,5 +54,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img id="fotom4" src="../assets/img/utter ultimate.jpg">
           </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
