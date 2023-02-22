@@ -21,13 +21,19 @@
      <nav class="header__menu">
         
      <a id="logo" class="logo animate__animated animate__fadeInLeftBig" href="index.html"><img src="assets/img/logo ultimate.jpg" class="header__logo"></a> 
-     <ul class="menu animate__animated animate__backInRight " >
-        <li><a href="./paginas/quienessomos.html">Quienes Somos</a> </li>
-        <li><a href="./paginas/sucursales.html">Sucursales</a></li>
-        <li><a href="./paginas/nuestrosproductos.html">Productos</a></li>
-        <li><a href="./paginas/presupuestos.html">Presupuestos</a></li>
-        <li><a href="./paginas/nuestrostrabajos.html">Nuestros Trabajos</a></li>
-     </ul>
+     <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle menu animate__animated animate__backInRight "" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button"> <a href="./paginas/quienessomos.html">Quienes Somos</a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/sucursales.html">Sucursales</a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/presupuestos.html">Presupuestos </a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/nuestrostrabajos.html">Nuestros Trabajos</a> </a></button></li>
+
+          <li><button class="dropdown-item" type="button"><a href="./paginas/nuestrosproductos.html">Productos</a></button></li>
+        </ul>
+      </div>
  </nav>
    
     </header>
