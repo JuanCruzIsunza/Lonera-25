@@ -147,6 +147,7 @@ button:hover{
 }
  .dropdown-item{
     background-color: black;
+    font-size: Verdana, Geneva, Tahoma, sans-serif;
  }
 .sucursalsaladillo{
     border: 1px solid white;
