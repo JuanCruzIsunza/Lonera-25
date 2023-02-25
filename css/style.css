@@ -6,9 +6,10 @@
 body{
     background: rgb(28,98,109);
     background: linear-gradient(90deg, rgba(28,98,109,1) 75%, rgba(110,242,250,1) 100%);
+    font-size: 16px;
 } 
 h2 img{
-    width: 450px;
+    width: 28.125rem;
     grid-area: foto;
 }
 
@@ -32,7 +33,7 @@ a{
 .main__texto{
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     grid-area: texto;
     
 }
@@ -64,7 +65,7 @@ main{
 main #mensaje{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:white;
-    font-size: 40px;
+    font-size: 2.5rem;
     grid-area: mensaje1;
 }
 #foto1{
@@ -74,28 +75,28 @@ main #mensaje{
 .flex-container2{
     display: flex;
     width:100%;
-    padding:30px;
+    padding:1.875rem;
     flex-flow: row wrap;
     justify-content: center;
     color:black;
-    row-gap: 5px;
-    column-gap: 10px;}
+    row-gap: 0.3125rem;
+    column-gap: 0.625rem;}
 .flex-container1{
     display: flex;
     width:100%;
-    padding:30px;
+    padding:1.875rem;
     flex-flow: row wrap;
     justify-content: center;
     color:black;
-    row-gap: 5px;
-    column-gap: 10px;
+    row-gap: 0.3125rem;
+    column-gap: 0.625rem;
 
 }
 .tarjeta-producto{
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+    border: 0.0625rem solid white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    width: 18.75rem;
     background-color: #93B1A7;
     animation-name: animaciontarjetaproducto;
     animation-duration: 3s;
@@ -121,17 +122,17 @@ button:hover{
 }
 .tarjeta-producto img{
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.5s ease-in;
 }
 .tarjeta-producto h2{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .tarjeta-producto .precio{
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 100%;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -151,10 +152,10 @@ button:hover{
  }
 .sucursalsaladillo{
     border: 1px solid white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    margin: 30px 15px;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    width: 18.75rem;
+    margin: 1.875rem 0.9375rem;
     background-color: #93B1A7;
     transition: all 0.5s ease-in;
     animation-name: animaciontarjetaproducto;
@@ -166,31 +167,31 @@ button:hover{
 
 .sucursalsaladillo img{
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .sucursalsaladillo h1{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .sucursalsaladillo button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 0.75rem 1.5625rem;
+    border-radius: 0.5rem;
     transition: all 0.5s ease-in
 }
 
 .sucursal25demayo{
     border: 1px solid white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    margin: 30px 15px;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    width: 18.75rem;
+    margin: 1.875rem 0.9375rem;
     background-color: #93B1A7;
     transition: all 0.5s ease-in;
     animation-name: animaciontarjetaproducto;
@@ -208,7 +209,7 @@ button:hover{
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .sucursal25demayo button{
@@ -227,8 +228,8 @@ form label{
 form{
     border: 2px solid white;
     border-radius: 8px;
-    padding: 25px;
-    width: 300px;
+    padding: 1.5625rem;
+    width: 18.75rem;
     background-color: #93B1A7;
     animation-name: animaciontarjetaproducto;
     animation-duration: 3s;
@@ -239,7 +240,7 @@ form{
 
 form p{
     color:white;
-   font-size: 25px ;
+   font-size: 1.5625rem ;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  #presupuestoB{
@@ -261,7 +262,7 @@ form p{
     flex-flow: row wrap;
 }
 .fotos img{
-    width: 450px;
+    width: 28.125rem;
 }
 .fotos{
     display: flex;
@@ -276,6 +277,7 @@ form p{
 body{
   
     display: grid;
+    grid-gap: 1.25em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     " header header header header"
@@ -355,6 +357,16 @@ footer{
 #fottr9{
     grid-area: fottr9;
 }
+.fotop{
+    grid-area: fotop;
+}
+.presupuesto{
+    grid-area: presupuesto;
+}
+#mensaje1{
+    grid-area: mensajep;
+}
+
 @keyframes animaciontarjetaproducto{
     0%{
         background-color:#AAAE7F ;
@@ -377,7 +389,7 @@ footer{
 
 @media (max-width:992px){
     body{
-        width:auto;
+        font-size: 16px ;
        
     grid-template-columns:  1fr;
     grid-template-areas:
@@ -387,14 +399,7 @@ footer{
     "footer"
    ;
     }
-    main{
-        width:auto;}
-    head{
-        width: auto;
-    }
-    footer{ 
-        width: auto;
-    }
+    
     #mainindex{ 
         display: grid;
        grid-template-columns: 1fr;
@@ -403,7 +408,10 @@ footer{
        "texto"
        "texto"
        "foto"
+       "foto"
+       
        ;
+       font-size: 14px;
        
     }
     h2 img{
@@ -413,16 +421,21 @@ footer{
     .main__texto{
         font-size: 30px;
       }
-     #mensaje{
-        font-size: 30px;
-     }
+      main #mensaje{
+     
+        font-size: 20px;
+       
+    }
+   
     #mainqs{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "mensaje1"
-        "fotoqs";
+         display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 70px;
+       grid-template-areas:
+       "mensaje1"
+       "mensaje1"
+       "fotoqs"
+       "fotoqs"
     }
     #logomarcas{
         display: grid;
@@ -452,8 +465,7 @@ footer{
     .fotos{
       
       
-        padding: 50px;
-        flex-flow:column;
+        padding: 40px;
         display: grid;
         grid-template-columns: repeat(4,1fr) ;
         grid-template-rows: 70px;;
