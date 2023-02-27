@@ -304,7 +304,7 @@ form p{
                 justify-content:space-around;
             
             } 
-            #mensaje{
-                3.125
+            .main__texto{
+               font-size: 3.125;
             }
     }
