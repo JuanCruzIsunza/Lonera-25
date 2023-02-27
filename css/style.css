@@ -267,7 +267,9 @@ form p{
    ;
     }
     .header__menu{
-        background-color: black;}
+        background-color: black;
+    }
+    
     @media (min-width: 1200px){
    body{
     display: grid;
@@ -305,6 +307,13 @@ form p{
             
             } 
             .main__texto{
-               font-size: 3.125;
-            }
-    }
+                color: white;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 3.125rem;
+                grid-area: texto;}
+                main #mensaje{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color:white;
+                    font-size: 2.5rem;
+                    grid-area: mensaje1;}
+        }
