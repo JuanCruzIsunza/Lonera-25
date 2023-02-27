@@ -7,7 +7,7 @@ body{
     background: rgb(28,98,109);
     background: linear-gradient(90deg, rgba(28,98,109,1) 75%, rgba(110,242,250,1) 100%);
     font-size: 16px;
-} 
+}
 h2 img{
     width: 28.125rem;
     grid-area: foto;
@@ -35,32 +35,6 @@ a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3.125rem;
     grid-area: texto;
-    
-}
-ul li{
-    display: inline;
-   
-}
-
-.header__menu{
-    background-color: black;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-around;
-
-} 
-.footer__marcas {
-    display: flex;
-    justify-content:center;
-}
-main{
-    display: flex;
-    justify-content:space-between;
-    flex-flow: row center;
-    grid-area: main;
- 
-
-    
 }
 main #mensaje{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -72,6 +46,11 @@ main #mensaje{
     width: 450px;
     grid-area:fotoqs;
 }
+.dropdown-item{
+    background-color: black;
+    font-size: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
 .flex-container2{
     display: flex;
     width:100%;
@@ -256,118 +235,8 @@ form p{
    font-size: 40px; 
    font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
- #presupuesto{
-    display: flex;
-    justify-content:space-evenly;
-    flex-flow: row wrap;
-}
-.fotos img{
-    width: 28.125rem;
-}
-.fotos{
-    display: flex;
-    width:100%;
-    padding:30px;
-    flex-flow: row wrap;
-    justify-content: center;
-    row-gap: 5px;
-    column-gap: 10px;
-
-}
-body{
-  
-    display: grid;
-    grid-gap: 1.25em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    " header header header header"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer"
-   ;
-    
-}
-header{
-grid-area: header;
-}
-footer{
-    grid-area: footer;
-}
-
-#fotom1{
-    grid-area: fotom1;  
-}
-#fotom2{
-    grid-area: fotom2;
-}
-#fotom3{
-    grid-area: fotom3;
-}
-#fotom4{
- grid-area: fotom4;
-}
-#tp1{
-    grid-area: tp1;
-}
-#tp2{
-    grid-area: tp2;
-}
-#tp3{
-    grid-area: tp3;
-}
-#tp4{
-    grid-area: tp4;
-}
-#tp5{
-    grid-area: tp5;
-}
-#tp6{
-    grid-area: tp6;
-}
-#tp7{
-    grid-area: tp7;
-}
-#tp8{
-    grid-area: tp8;
-}
-#fottr1{
-    grid-area: fottr1;
-}
-#fottr2{
-    grid-area: fottr2;
-}
-#fottr3{
-    grid-area: fottr3;
-}
-#fottr4{
-    grid-area: fottr4;
-}
-#fottr5{
-    grid-area: fottr5;
-}
-#fottr6{
-    grid-area: fottr6;
-}
-#fottr7{
-    grid-area: fottr7;
-}
-#fottr8{
-    grid-area: fottr8;
-}
-#fottr9{
-    grid-area: fottr9;
-}
-.fotop{
-    grid-area: fotop;
-}
-.presupuesto{
-    grid-area: presupuesto;
-}
-#mensaje1{
-    grid-area: mensajep;
-}
-
-@keyframes animaciontarjetaproducto{
+ 
+ @keyframes animaciontarjetaproducto{
     0%{
         background-color:#AAAE7F ;
 
@@ -386,9 +255,7 @@ footer{
 
 }
 
-
-@media (max-width:992px){
-    body{
+ body{
         font-size: 16px ;
        
     grid-template-columns:  1fr;
@@ -399,91 +266,42 @@ footer{
     "footer"
    ;
     }
-    
-    #mainindex{ 
-        display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 70px;
-       grid-template-areas:
-       "texto"
-       "texto"
-       "foto"
-       "foto"
-       
-       ;
-       font-size: 14px;
-       
+    .header__menu{
+        background-color: black;}
+    @media (min-width: 1200px){
+   body{
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    " header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
     }
-    h2 img{
-        width: 350px;
-    
-    }
-    .main__texto{
-        font-size: 30px;
-      }
-      main #mensaje{
+    main{
+        display: flex;
+        justify-content:space-between;
+        flex-flow: row center;
+        grid-area: main;}
      
-        font-size: 20px;
-       
+        header{
+            grid-area: header;
+            }
+            footer{
+                grid-area: footer;
+            }
+        
+            #presupuesto {
+                display: flex;
+                justify-content: space-evenly;
+                flex-flow: row wrap;
+            }
+            .header__menu{
+                background-color: black;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-around;
+            
+            } 
     }
-   
-    #mainqs{
-         display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 70px;
-       grid-template-areas:
-       "mensaje1"
-       "mensaje1"
-       "fotoqs"
-       "fotoqs"
-    }
-    #logomarcas{
-        display: grid;
-        grid-template-columns: repeat(4,1fr) ;
-        grid-template-rows: 50px;
-        grid-template-areas:
-        "fotom1"
-        "fotom2"
-        "fotom3"
-        "fotom4";
-    }
-    .flex-container1{
-        display: grid;
-        grid-template-columns: repeat(4,1fr) ;
-        grid-template-rows: 70px;;
-        grid-template-areas:
-        "tp1"
-        "tp1"
-        "tp2"
-        "tp3"
-        "tp4"
-        "tp5"
-        "tp6"
-        "tp7"
-        "tp8";
-    }
-    .fotos{
-      
-      
-        padding: 40px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr) ;
-        grid-template-rows: 70px;;
-        grid-template-areas:
-        "fottr1"
-        "fottr1"
-        "fottr2"
-        "fottr3"
-        "fottr4"
-        "fottr5"
-        "fottr6"
-        "fottr7"
-        "fottr8"
-        "fottr9";
-    }
-}
-
-
-
-  
- 
