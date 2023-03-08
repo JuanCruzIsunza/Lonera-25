@@ -5,7 +5,6 @@
 }
 body{
     background: rgb(28,98,109);
-    background: linear-gradient(90deg, rgba(28,98,109,1) 75%, rgba(110,242,250,1) 100%);
     font-size: 16px;
 }
 h2 img{
@@ -29,7 +28,12 @@ a{
     text-decoration: none;
    
 }
-
+.header__menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    list-style-type: none;
+}
 .main__texto{
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -270,6 +274,7 @@ form p{
         background-color: black;
     }
     
+    
     @media (min-width: 1200px){
    body{
     display: grid;
@@ -315,5 +320,22 @@ form p{
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color:white;
                     font-size: 2.5rem;
-                    grid-area: mensaje1;}
+                   grid-area: mensaje1;}
+                   .fotos img{
+                    width: 450px;
+                }
+                .fotos{
+                    display: flex;
+                    width:100%;
+                    padding:30px;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    row-gap: 0.3125rem;
+                    column-gap: 0.625rem;
+                   
+                }
+                .footer__marcas {
+                    display: flex;
+                    justify-content:center;
+                }
         }
