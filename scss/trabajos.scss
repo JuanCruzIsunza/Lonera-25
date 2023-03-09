@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: rgb(28,98,109);
+    font-size: 16px;
+    font-size: 16px ;
+       
+    grid-template-columns:  1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+   ;
+}
+header{
+    ul{
+        list-style-type: none;
+        text-align: center;
+        ;
+        font-family: Ubuntu;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+       
+    }
+    .header__menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        list-style-type: none;
+        
+    }
+    .header__menu{
+    background-color: black;}
+}
+footer{
+    .marcas img{
+        width: 250px;
+        
+    } 
+    
+}
+@media (min-width: 1200px){
+    body{
+     display: grid;
+     grid-gap: 1.25em;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-areas:
+     " header header header header"
+     "main main main main"
+     "main main main main"
+     "footer footer footer footer"
+     }
+     main{
+        display: flex;
+        justify-content:space-between;
+        flex-flow: row center;
+        grid-area: main;}
+        header{
+            grid-area: header;
+            }
+            footer{
+                grid-area: footer;
+            }
+            
+            .fotos{
+                display: flex;
+                width:100%;
+                padding:30px;
+                flex-flow: row wrap;
+                justify-content: center;
+                row-gap: 0.3125rem;
+                column-gap: 0.625rem;
+                img{
+                    width: 450px;
+                }
+            }
+            .footer__marcas {
+                display: flex;
+                justify-content:center;
+            }
+        }

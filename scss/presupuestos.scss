@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: rgb(28,98,109);
+    font-size: 16px;
+    font-size: 16px ;
+       
+    grid-template-columns:  1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+   ;
+}
+header{
+    ul{
+        list-style-type: none;
+        text-align: center;
+        ;
+        font-family: Ubuntu;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+       
+    }
+    .header__menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        list-style-type: none;
+        
+    }
+    .header__menu{
+    background-color: black;}
+}
+
+
+main{
+    form{
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 1.5625rem;
+        width: 18.75rem;
+        background-color: #93B1A7;
+        animation-name: animaciontarjetaproducto;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function:ease ;
+        animation-direction:alternate ;
+        p{
+            color:white;
+           font-size: 1.5625rem ;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #presupuestoB{
+            background-color: black;
+            color: white;
+            padding: 12px 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 8px;
+            transition: all 0.5s ease-in
+         }
+         
+    }
+    #mensaje1{
+        color:white;
+       font-size: 40px; 
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+    
+}
+footer{
+    .marcas img{
+        width: 250px;
+        
+    } 
+}
+@media (min-width: 1200px){
+    body{
+     display: grid;
+     grid-gap: 1.25em;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-areas:
+     " header header header header"
+     "main main main main"
+     "main main main main"
+     "footer footer footer footer"
+     }
+     main{
+        display: flex;
+        justify-content:space-between;
+        flex-flow: row center;
+        grid-area: main;}
+        header{
+            grid-area: header;
+            }
+            footer{
+                grid-area: footer;
+            }
+            #presupuesto {
+                display: flex;
+                justify-content: space-evenly;
+                flex-flow: row wrap;
+            }
+            .footer__marcas {
+                display: flex;
+                justify-content:center;
+            }
+        }
+        

@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+main h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  grid-area: texto; }
+
+main h2 {
+  width: 28.125rem;
+  grid-area: foto; }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  .main__texto {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.125rem;
+    grid-area: texto; }
+  h2 img {
+    width: 450px; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+main form {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 1.5625rem;
+  width: 18.75rem;
+  background-color: #93B1A7;
+  animation-name: animaciontarjetaproducto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+  main form p {
+    color: white;
+    font-size: 1.5625rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  main form #presupuestoB {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    transition: all 0.5s ease-in; }
+
+main #mensaje1 {
+  color: white;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  #presupuesto {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+main .flex-container1 {
+  display: flex;
+  width: 100%;
+  padding: 1.875rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: black;
+  row-gap: 0.3125rem;
+  column-gap: 0.625rem; }
+
+main .tarjeta-producto {
+  border: 0.0625rem solid white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  width: 18.75rem;
+  background-color: #93B1A7;
+  animation-name: animaciontarjetaproducto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+  main .tarjeta-producto img {
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in; }
+  main .tarjeta-producto h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 1.25rem; }
+  main .tarjeta-producto .precio {
+    font-size: 1.25rem;
+    width: 100%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  main .tarjeta-producto button {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    transition: all 0.5s ease-in; }
+  main .tarjeta-producto a {
+    color: white;
+    text-decoration: none; }
+
+main .tarjeta-producto:hover {
+  transform: translate(20px, 25px);
+  transition: 0.5s ease-out; }
+
+@keyframes animaciontarjetaproducto {
+  0% {
+    background-color: #AAAE7F; }
+  33% {
+    background-color: #93B1A7; }
+  66% {
+    transform: translateX(20px); }
+  100% {
+    transform: scale(1.5px); } }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+main h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  grid-area: mensaje1; }
+
+main h2 {
+  width: 450px;
+  grid-area: fotoqs; }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    grid-area: mensaje1; }
+  h2 img {
+    width: 450px; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+main .flex-container2 {
+  display: flex;
+  width: 100%;
+  padding: 1.875rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: black;
+  row-gap: 0.3125rem;
+  column-gap: 0.625rem; }
+
+main .sucursalsaladillo {
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  width: 18.75rem;
+  margin: 1.875rem 0.9375rem;
+  background-color: #93B1A7;
+  transition: all 0.5s ease-in;
+  animation-name: animaciontarjetaproducto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+  main .sucursalsaladillo img {
+    width: 100%;
+    border-radius: 0.5rem; }
+  main .sucursalsaladillo h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 2.5rem; }
+  main .sucursalsaladillo button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1.5625rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in; }
+  main .sucursalsaladillo a {
+    color: white;
+    text-decoration: none; }
+
+main .sucursal25demayo {
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  width: 18.75rem;
+  margin: 1.875rem 0.9375rem;
+  background-color: #93B1A7;
+  transition: all 0.5s ease-in;
+  animation-name: animaciontarjetaproducto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+  main .sucursal25demayo img {
+    width: 100%;
+    border-radius: 8px; }
+  main .sucursal25demayo h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 2.5rem; }
+  main .sucursal25demayo button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in; }
+  main .sucursal25demayo a {
+    color: white;
+    text-decoration: none; }
+
+main .sucursal25demayo:hover {
+  transform: translate(20px, -25px);
+  transition: 0.5s ease-out; }
+
+main .sucursalsaladillo:hover {
+  transform: translate(20px, -25px);
+  transition: 0.5s ease-out; }
+
+main button:hover {
+  transform: translateY(10px);
+  transition: 0.5s ease-out; }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1c626d;
+  font-size: 16px;
+  font-size: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "main" "footer"; }
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  font-family: Ubuntu; }
+
+header a {
+  color: white;
+  text-decoration: none; }
+
+header .header__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+header .header__menu {
+  background-color: black; }
+
+footer .marcas img {
+  width: 250px; }
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row center;
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  footer {
+    grid-area: footer; }
+  .fotos {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 0.3125rem;
+    column-gap: 0.625rem; }
+    .fotos img {
+      width: 450px; }
+  .footer__marcas {
+    display: flex;
+    justify-content: center; } }

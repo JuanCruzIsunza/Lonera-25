@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: rgb(28,98,109);
+    font-size: 16px;
+    font-size: 16px ;
+       
+    grid-template-columns:  1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "footer"
+   ;
+}
+header{
+    ul{
+        list-style-type: none;
+        text-align: center;
+        ;
+        font-family: Ubuntu;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+       
+    }
+    .header__menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        list-style-type: none;
+        
+    }
+    .header__menu{
+    background-color: black;}
+}
+main{
+    .flex-container2{
+        display: flex;
+        width:100%;
+        padding:1.875rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        color:black;
+        row-gap: 0.3125rem;
+        column-gap: 0.625rem;}
+        .sucursalsaladillo{
+            border: 1px solid white;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            width: 18.75rem;
+            margin: 1.875rem 0.9375rem;
+            background-color: #93B1A7;
+            transition: all 0.5s ease-in;
+            animation-name: animaciontarjetaproducto;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function:ease ;
+            animation-direction:alternate ;
+            img{
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+            h1{
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            button{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: black;
+                color: white;
+                padding: 0.75rem 1.5625rem;
+                border-radius: 0.5rem;
+                transition: all 0.5s ease-in
+            }
+            a{
+                color: white;
+                text-decoration: none;
+               
+            }
+        }
+        .sucursal25demayo{
+            border: 1px solid white;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            width: 18.75rem;
+            margin: 1.875rem 0.9375rem;
+            background-color: #93B1A7;
+            transition: all 0.5s ease-in;
+            animation-name: animaciontarjetaproducto;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function:ease ;
+            animation-direction:alternate ;
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+            h1{ 
+                color:white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            button{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: black;
+                color: white;
+                padding: 12px 25px;
+                border-radius: 8px;
+                transition: all 0.5s ease-in
+            }
+            a{
+                color: white;
+                text-decoration: none;
+               
+            }
+        }
+        .sucursal25demayo:hover{
+            transform: translate(20px,-25px);
+            transition:0.5s ease-out;
+        }
+        .sucursalsaladillo:hover{
+            transform: translate(20px,-25px);
+            transition:0.5s ease-out;
+        }
+        button:hover{
+            transform: translateY(10px);
+            transition:0.5s ease-out;
+        }
+        
+}
+
+footer{
+    .marcas img{
+        width: 250px;
+        
+    } 
+}
+@media (min-width: 1200px){
+    body{
+     display: grid;
+     grid-gap: 1.25em;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-areas:
+     " header header header header"
+     "main main main main"
+     "main main main main"
+     "footer footer footer footer"
+     }
+     main{
+        display: flex;
+        justify-content:space-between;
+        flex-flow: row center;
+        grid-area: main;}
+        header{
+            grid-area: header;
+            }
+            footer{
+                grid-area: footer;
+            }
+            .footer__marcas {
+                display: flex;
+                justify-content:center;
+            }
+        }
