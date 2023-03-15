@@ -38,6 +38,19 @@ header{
     .header__menu{
     background-color: black;}
 }
+main{
+    .fotos img{
+        width: 350px;
+    }
+    .fotos{
+        display: flex;
+        width:100%;
+        padding:30px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+}
 footer{
     .marcas img{
         width: 250px;

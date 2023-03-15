@@ -18,13 +18,13 @@ header a {
   color: white;
   text-decoration: none; }
 
-header .header__menu {
+header #header__menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none; }
 
-header .header__menu {
+header #header__menu {
   background-color: black; }
 
 main h1 {
@@ -33,8 +33,8 @@ main h1 {
   font-size: 2.5rem;
   grid-area: texto; }
 
-main h2 {
-  width: 28.125rem;
+main h2 img {
+  width: 350px;
   grid-area: foto; }
 
 footer .marcas img {
@@ -118,6 +118,9 @@ main form {
     border-radius: 8px;
     transition: all 0.5s ease-in; }
 
+main #foto1 {
+  width: 350px; }
+
 main #mensaje1 {
   color: white;
   font-size: 40px;
@@ -145,6 +148,8 @@ footer .marcas img {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap; }
+  #foto1 {
+    width: 350px; }
   .footer__marcas {
     display: flex;
     justify-content: center; } }
@@ -296,7 +301,7 @@ main h1 {
   grid-area: mensaje1; }
 
 main h2 {
-  width: 450px;
+  width: 350px;
   grid-area: fotoqs; }
 
 footer .marcas img {
@@ -493,6 +498,16 @@ header .header__menu {
 
 header .header__menu {
   background-color: black; }
+
+main .fotos img {
+  width: 350px; }
+
+main .fotos {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  flex-flow: row wrap;
+  justify-content: center; }
 
 footer .marcas img {
   width: 250px; }

@@ -28,14 +28,14 @@ header{
         text-decoration: none;
        
     }
-    .header__menu{
+    #header__menu{
         display: flex;
         flex-flow: row wrap;
         justify-content:space-around;
         list-style-type: none;
         
     }
-    .header__menu{
+    #header__menu{
     background-color: black;}
 }
 main{
@@ -45,9 +45,9 @@ main{
         font-size: 2.5rem;
         grid-area: texto;
     }
-    h2{
-        width: 28.125rem;
-    grid-area: foto;
+    h2 img{
+       width: 350px;;
+        grid-area: foto;
     }
 }
 footer{
@@ -94,3 +94,4 @@ footer{
                 justify-content:center;
             }
         }
+    

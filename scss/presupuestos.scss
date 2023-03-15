@@ -65,7 +65,12 @@ main{
             border-radius: 8px;
             transition: all 0.5s ease-in
          }
+
          
+    }
+    #foto1{
+        width: 350px;
+       
     }
     #mensaje1{
         color:white;
@@ -106,6 +111,10 @@ footer{
                 display: flex;
                 justify-content: space-evenly;
                 flex-flow: row wrap;
+            }
+            #foto1{
+                width:350px;
+               
             }
             .footer__marcas {
                 display: flex;
