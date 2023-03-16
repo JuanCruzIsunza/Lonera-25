@@ -3,7 +3,8 @@
   padding: 0; }
 
 body {
-  background: #1c626d;
+  background-color: #DFA871;
+  background: #DFA871;
   font-size: 16px;
   font-size: 16px;
   grid-template-columns: 1fr;
@@ -71,7 +72,7 @@ footer .marcas img {
   padding: 0; }
 
 body {
-  background: #1c626d;
+  background: #DFA871;
   font-size: 16px;
   font-size: 16px;
   grid-template-columns: 1fr;
